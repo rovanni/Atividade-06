@@ -5,13 +5,13 @@ package ppgi.mestrado.exercicio04;
  */
 public class Funcionario {
     String nome, email, cargo;
-    double salario_base;
+    double salarioBase;
 
     public Funcionario(String nome, String email, String cargo, double salario_base) {
         this.nome = nome;
         this.email = email;
         this.cargo = cargo;
-        this.salario_base = salario_base;
+        this.salarioBase = salario_base;
     }
 
     public String getNome() {
@@ -38,12 +38,12 @@ public class Funcionario {
         this.cargo = cargo;
     }
 
-    public double getSalario_base() {
-        return salario_base;
+    public double getSalarioBase() {
+        return salarioBase;
     }
 
-    public void setSalario_base(double salario_base) {
-        this.salario_base = salario_base;
+    public void setSalarioBase(double salarioBase) {
+        this.salarioBase = salarioBase;
     }
         
 }

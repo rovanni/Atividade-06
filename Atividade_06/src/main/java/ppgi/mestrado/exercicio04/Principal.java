@@ -9,14 +9,18 @@ public class Principal {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Funcionario func[] = new Funcionario[4];        
-        func[0] = new Funcionario("José", "jose@jose.com", "DESENVOLVEDOR", 5000f);
-        func[1] = new Funcionario("Luciano", "luciano@", "GERENTE", 2500f); 
-        func[2] = new Funcionario("Pedro", "pedro@pedro.com", "TESTADOR", 550f);
-        func[3] = new Funcionario("Maria", "maria@maria.com", "DBA", 2500f);  
+        Funcionario Colaborador[] = new Funcionario[8];        
+        Colaborador[0] = new Funcionario("José", "jose@jose.com", "DESENVOLVEDOR", 5000f);
+        Colaborador[1] = new Funcionario("Antonio", "antonio@antonio.com", "DESENVOLVEDOR", 1000f);          
+        Colaborador[2] = new Funcionario("Luciano", "luciano@", "GERENTE", 2500f); 
+        Colaborador[3] = new Funcionario("Luiza", "luiza@luiza.com", "GERENTE", 5000f);        
+        Colaborador[4] = new Funcionario("Pedro", "pedro@pedro.com", "TESTADOR", 550f);
+        Colaborador[5] = new Funcionario("Daniel", "daniel@daniel.com", "TESTADOR", 550f);        
+        Colaborador[6] = new Funcionario("Maria", "maria@maria.com", "DBA", 2500f); 
+        Colaborador[7] = new Funcionario("Ana", "ana@ana.com", "DBA", 1500f);        
         Calculadora v = new Calculadora();        
-        for (Funcionario func1 : func) {
-            System.out.println("O cálculo do salário líquido de " + func1.getNome() + " é: R$ " + v.calcula_Sal_Liqui(func1));            
+        for (Funcionario func1 : Colaborador) {
+            System.out.println("O salario bruto é: R$"+ func1.getSalarioBase()+" e seu salário líquido do funcionário: " + func1.getNome() + " que é "+func1.getCargo()+" é de: R$ " + v.calculaSalarioLiquido(func1));            
         }
     }
     
