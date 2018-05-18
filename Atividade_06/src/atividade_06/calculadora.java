@@ -2,42 +2,43 @@ package atividade_06;
 
 public class calculadora {
 
-    double desenvolvedor(Funcionario s) {
-        if (s.getSalario_base() >= 3000){
-            return desconto_20(s.getSalario_base());
+   
+    public double calcula_Sal_Liqui(Funcionario s) {
+        if ("DESENVOLVEDOR".equals(s.getCargo())) {         
+            if (s.getSalario_base() >= 3000){
+                return desconto_20(s.getSalario_base());
+            }
+            else {
+                return desconto_10(s.getSalario_base());
+            }
+        }else if ("DBA".equals(s.getCargo())) {
+            if (s.getSalario_base() >= 2000){
+                return desconto_25(s.getSalario_base());
+            }
+            else {
+                return desconto_15(s.getSalario_base());
+            }            
+            
+        }else if ("TESTADOR".equals(s.getCargo())) { 
+            if (s.getSalario_base() >= 2000){
+                return desconto_25(s.getSalario_base());
+            }
+            else {
+                return desconto_15(s.getSalario_base());
+            }            
+            
+        }else if ("GERENTE".equals(s.getCargo())) { 
+            if (s.getSalario_base() >= 5000){
+                return desconto_30(s.getSalario_base());
+            }
+            else {
+                return desconto_20(s.getSalario_base());
+            }
+              
         }
-        else {
-            return desconto_10(s.getSalario_base());
-        }
+        return 0;
     }    
-    
-    double dba(Funcionario s) {
-        if (s.getSalario_base() >= 2000){
-            return desconto_25(s.getSalario_base());
-        }
-        else {
-            return desconto_15(s.getSalario_base());
-        }
-    }    
-    
-    double testador(Funcionario s) {
-        if (s.getSalario_base() >= 2000){
-            return desconto_25(s.getSalario_base());
-        }
-        else {
-            return desconto_15(s.getSalario_base());
-        }
-    }        
-
-    double gerente(Funcionario s) {
-        if (s.getSalario_base() >= 5000){
-            return desconto_30(s.getSalario_base());
-        }
-        else {
-            return desconto_20(s.getSalario_base());
-        }
-    }     
-    
+      
     public double desconto_10(double salario_base){
         salario_base-= (salario_base*1.10-salario_base);
         return salario_base;
