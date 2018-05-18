@@ -32,16 +32,23 @@ public class Atividade_06Test {
      * Test of main method, of class Atividade_06.
      */
     @Test
-    public void testCalculoSalarioDESENVOLVEDOR() {
+    public void test01_CalculoSalarioDESENVOLVEDOR() {
         calculadora v = new calculadora();
-        Funcionario c = new Funcionario("Luciano", "luciano@", "DESENVOLVEDOR", 5000f);
+        Funcionario c = new Funcionario("José", "jose@jose.com", "DESENVOLVEDOR", 5000f);
         assertEquals(4000f,v.calcula_Sal_Liqui(c),1.0);
     }   
-    public void testCalculoSalarioGERENTE() {
+    @Test    
+    public void test02_CalculoSalarioGERENTE() {
         calculadora v = new calculadora();
-        Funcionario c = new Funcionario("Luciano", "luciano@", "GERENTE", 2500f);
+        Funcionario c = new Funcionario("Luciano", "luciano@luciano.com", "GERENTE", 2500f);
         assertEquals(2000f,v.calcula_Sal_Liqui(c),1.0);
     }     
+    @Test    
+    public void test03_CalculoSalarioTESTADOR() {
+        calculadora v = new calculadora();
+        Funcionario c = new Funcionario("pedro", "pedro@pedro.com", "TESTADOR", 550f);
+        assertEquals(467.5f,v.calcula_Sal_Liqui(c),1.0);
+    }       
 
     
     
