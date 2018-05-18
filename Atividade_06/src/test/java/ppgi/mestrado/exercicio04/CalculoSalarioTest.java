@@ -24,6 +24,8 @@ public class CalculoSalarioTest {
         Calculadora v = new Calculadora();
         Funcionario c = new Funcionario("Luciano", "luciano@luciano.com", "GERENTE", 2500f);
         assertEquals(2000f,v.calcula_Sal_Liqui(c),1.0);
+        Funcionario c1 = new Funcionario("Luiza", "luiza@luiza.com", "GERENTE", 5000f);
+        assertEquals(3500f,v.calcula_Sal_Liqui(c1),1.0);        
     }     
     @org.junit.Test
     public void test03_CalculoSalario_TESTADOR() {
