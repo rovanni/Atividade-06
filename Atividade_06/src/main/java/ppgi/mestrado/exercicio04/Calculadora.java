@@ -6,38 +6,39 @@ package ppgi.mestrado.exercicio04;
 public class Calculadora {
    
     public double calculaSalarioLiquido(Funcionario s) {
+        Double salarioLiquido = null;
         if ("DESENVOLVEDOR".equals(s.getCargo())) {         
             if (s.getSalarioBase() >= 3000){
-                return desconto_20(s.getSalarioBase());
+                salarioLiquido = desconto_20(s.getSalarioBase());
             }
             else {
-                return desconto_10(s.getSalarioBase());
+                salarioLiquido = desconto_10(s.getSalarioBase());
             }
         }else if ("DBA".equals(s.getCargo())) {
             if (s.getSalarioBase() >= 2000){
-                return desconto_25(s.getSalarioBase());
+                salarioLiquido = desconto_25(s.getSalarioBase());
             }
             else {
-                return desconto_15(s.getSalarioBase());
+                salarioLiquido = desconto_15(s.getSalarioBase());
             }            
             
         }else if ("TESTADOR".equals(s.getCargo())) { 
             if (s.getSalarioBase() >= 2000){
-                return desconto_25(s.getSalarioBase());
+                salarioLiquido = desconto_25(s.getSalarioBase());
             }
             else {
-                return desconto_15(s.getSalarioBase());
+                salarioLiquido = desconto_15(s.getSalarioBase());
             }            
             
         }else if ("GERENTE".equals(s.getCargo())) { 
             if (s.getSalarioBase() >= 5000){
-                return desconto_30(s.getSalarioBase());
+                salarioLiquido = desconto_30(s.getSalarioBase());
             }
             else {
-                return desconto_20(s.getSalarioBase());
+                salarioLiquido = desconto_20(s.getSalarioBase());
             }
         }
-        return 0;
+        return salarioLiquido;
     }    
       
     public double desconto_10(double salario_base){
