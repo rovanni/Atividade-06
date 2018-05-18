@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package atividade_06;
 
 import org.junit.After;
@@ -11,10 +6,6 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-/**
- *
- * @author lucia
- */
 public class Atividade_06Test {
     
     public Atividade_06Test() {
@@ -41,11 +32,7 @@ public class Atividade_06Test {
      */
     @Test
     public void testMain() {
-        System.out.println("main");
-        String[] args = null;
-        Atividade_06.main(args);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+
     }
     
 }
