@@ -34,7 +34,7 @@ public class CalculoSalarioTest {
         assertEquals(30, calcPorcentDesc(calc.calculaSalarioLiquido(colab), colab.getSalarioBase()),1.0);        
         assertEquals(3500f,calc.calculaSalarioLiquido(colab),1.0);
         Funcionario colab01 = new Funcionario("Luiza", "luiza@luiza.com", "GERENTE", 2500f);
-        assertEquals(3500f,calc.calculaSalarioLiquido(colab01),1.0);        
+        assertEquals(2000f,calc.calculaSalarioLiquido(colab01),1.0);        
         assertEquals(20, calcPorcentDesc(calc.calculaSalarioLiquido(colab01), colab01.getSalarioBase()),1.0);        
     }     
     @org.junit.Test
