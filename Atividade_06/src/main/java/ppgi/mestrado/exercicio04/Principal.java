@@ -23,7 +23,7 @@ public class Principal {
         System.out.println("|----------------------- Calculando Salário ---------------------------|");        
         System.out.println("|----------------------------------------------------------------------|");        
         for (Funcionario func1 : Colaborador) {
-            System.out.println("O salario bruto é: R$"+ func1.getSalarioBase()+" e seu salário líquido do funcionário: " + func1.getNome() + " que é "+func1.getCargo()+" é de: R$ " + v.calculaSalarioLiquido(func1));            
+            System.out.println("O salario bruto é de: R$"+ func1.getSalarioBase()+" e o salário líquido do funcionário: " + func1.getNome() + " que é "+func1.getCargo()+" é de: R$ " + v.calculaSalarioLiquido(func1));            
         }
         System.out.println("|----------------------------------------------------------------------|");         
     }
