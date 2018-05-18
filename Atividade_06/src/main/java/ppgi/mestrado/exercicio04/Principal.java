@@ -1,9 +1,9 @@
-package com.mycompany.atividade_06;
+package ppgi.mestrado.exercicio04;
 /**
  *
  * @author Luciano Rovanni do Nascimento.
  */
-public class Atividade_06 {
+public class Principal {
 
     /**
      * @param args the command line arguments
@@ -14,7 +14,7 @@ public class Atividade_06 {
         func[1] = new Funcionario("Luciano", "luciano@", "GERENTE", 2500f); 
         func[2] = new Funcionario("Pedro", "pedro@pedro.com", "TESTADOR", 550f);
         func[3] = new Funcionario("Maria", "maria@maria.com", "DBA", 2500f);  
-        calculadora v = new calculadora();        
+        Calculadora v = new Calculadora();        
         for (Funcionario func1 : func) {
             System.out.println("O cálculo do salário líquido de " + func1.getNome() + " é: R$ " + v.calcula_Sal_Liqui(func1));            
         }

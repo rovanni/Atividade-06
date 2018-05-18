@@ -1,9 +1,9 @@
-package com.mycompany.atividade_06;
+package ppgi.mestrado.exercicio04;
 /**
  *
  * @author Luciano Rovanni do Nascimento.
  */
-public class salario {
+public class Salario {
     int desconto;
 
     public int getDesconto() {
@@ -14,7 +14,7 @@ public class salario {
         this.desconto = desconto;
     }
 
-    public salario(int desconto) {
+    public Salario(int desconto) {
         this.desconto = desconto;
     }
     

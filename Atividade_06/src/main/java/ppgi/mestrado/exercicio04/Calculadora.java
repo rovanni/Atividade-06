@@ -1,9 +1,9 @@
-package com.mycompany.atividade_06;
+package ppgi.mestrado.exercicio04;
 /**
  *
  * @author Luciano Rovanni do Nascimento.
  */
-public class calculadora {
+public class Calculadora {
    
     public double calcula_Sal_Liqui(Funcionario s) {
         if ("DESENVOLVEDOR".equals(s.getCargo())) {         

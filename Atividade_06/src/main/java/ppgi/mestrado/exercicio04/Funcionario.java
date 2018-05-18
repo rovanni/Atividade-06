@@ -1,4 +1,4 @@
-package com.mycompany.atividade_06;
+package ppgi.mestrado.exercicio04;
 /**
  *
  * @author Luciano Rovanni do Nascimento.
