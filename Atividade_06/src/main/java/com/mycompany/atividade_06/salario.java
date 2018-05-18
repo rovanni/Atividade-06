@@ -1,5 +1,8 @@
 package com.mycompany.atividade_06;
-
+/**
+ *
+ * @author Luciano Rovanni do Nascimento.
+ */
 public class salario {
     int desconto;
 

@@ -1,7 +1,9 @@
 package com.mycompany.atividade_06;
-
+/**
+ *
+ * @author Luciano Rovanni do Nascimento.
+ */
 public class calculadora {
-
    
     public double calcula_Sal_Liqui(Funcionario s) {
         if ("DESENVOLVEDOR".equals(s.getCargo())) {         
@@ -34,7 +36,6 @@ public class calculadora {
             else {
                 return desconto_20(s.getSalario_base());
             }
-              
         }
         return 0;
     }    

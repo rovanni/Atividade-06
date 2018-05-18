@@ -1,5 +1,8 @@
 package com.mycompany.atividade_06;
-
+/**
+ *
+ * @author Luciano Rovanni do Nascimento.
+ */
 public class Funcionario {
     String nome, email, cargo;
     double salario_base;

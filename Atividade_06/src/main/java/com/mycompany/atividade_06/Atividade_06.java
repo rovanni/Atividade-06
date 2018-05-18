@@ -1,7 +1,8 @@
 package com.mycompany.atividade_06;
-
-
-
+/**
+ *
+ * @author Luciano Rovanni do Nascimento.
+ */
 public class Atividade_06 {
 
     /**
