@@ -3,6 +3,3 @@ language: java
 addons:
   sonarcloud:
     organization: "rovanni-github"
-
-script:
-  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
