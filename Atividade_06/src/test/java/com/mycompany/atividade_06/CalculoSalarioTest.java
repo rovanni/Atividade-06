@@ -6,8 +6,7 @@ import static org.junit.Assert.assertEquals;
  *
  * @author Luciano Rovanni do Nascimento.
  */
-public class Atividade_06Test {
-
+public class CalculoSalarioTest {
 
     /**
      * Test of main method, of class Atividade_06.
