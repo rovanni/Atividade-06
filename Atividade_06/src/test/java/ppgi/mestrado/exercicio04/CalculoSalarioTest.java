@@ -16,6 +16,8 @@ public class CalculoSalarioTest {
         Calculadora v = new Calculadora();
         Funcionario c = new Funcionario("José", "jose@jose.com", "DESENVOLVEDOR", 5000f);
         assertEquals(4000f,v.calcula_Sal_Liqui(c),1.0);
+        Funcionario c1 = new Funcionario("Antonio", "antonio@antonio.com", "DESENVOLVEDOR", 1000f); 
+        assertEquals(900f,v.calcula_Sal_Liqui(c1),1.0);        
     }   
     @org.junit.Test
     public void test02_CalculoSalario_GERENTE() {
@@ -26,14 +28,18 @@ public class CalculoSalarioTest {
     @org.junit.Test
     public void test03_CalculoSalario_TESTADOR() {
         Calculadora v = new Calculadora();
-        Funcionario c = new Funcionario("Pedro", "pedro@pedro.com", "TESTADOR", 550f);
-        assertEquals(467.5f,v.calcula_Sal_Liqui(c),1.0);
+        Funcionario c = new Funcionario("Pedro", "pedro@pedro.com", "TESTADOR", 2000f);
+        assertEquals(1500f,v.calcula_Sal_Liqui(c),1.0);
+        Funcionario c1 = new Funcionario("Daniel", "daniel@daniel.com", "TESTADOR", 550f);
+        assertEquals(467.5f,v.calcula_Sal_Liqui(c1),1.0);        
     }       
     @org.junit.Test 
     public void test04_CalculoSalario_DBA() {
         Calculadora v = new Calculadora();
         Funcionario c = new Funcionario("Maria", "maria@maria.com", "DBA", 2500f);
         assertEquals(1875f,v.calcula_Sal_Liqui(c),1.0);
+        Funcionario c1 = new Funcionario("Ana", "ana@ana.com", "DBA", 1500f);
+        assertEquals(1275f,v.calcula_Sal_Liqui(c1),1.0);        
     }   
     
 }
