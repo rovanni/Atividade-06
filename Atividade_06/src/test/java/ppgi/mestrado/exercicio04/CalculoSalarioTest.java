@@ -35,14 +35,17 @@ public class CalculoSalarioTest {
         assertEquals(2000f,calc.calculaSalarioLiquido(colab),1.0);
         Funcionario colab01 = new Funcionario("Luiza", "luiza@luiza.com", "GERENTE", 5000f);
         assertEquals(3500f,calc.calculaSalarioLiquido(colab01),1.0);        
+        assertEquals(10, calcPorcentDesc(calc.calculaSalarioLiquido(colab01), colab01.getSalarioBase()),1.0);        
     }     
     @org.junit.Test
     public void test03_CalculoSalario_TESTADOR() {
         Calculadora calc = new Calculadora();
         Funcionario colab = new Funcionario("Pedro", "pedro@pedro.com", "TESTADOR", 2000f);
         assertEquals(1500f,calc.calculaSalarioLiquido(colab),1.0);
+        assertEquals(25, calcPorcentDesc(calc.calculaSalarioLiquido(colab), colab.getSalarioBase()),1.0);          
         Funcionario colab01 = new Funcionario("Daniel", "daniel@daniel.com", "TESTADOR", 550f);
         assertEquals(467.5f,calc.calculaSalarioLiquido(colab01),1.0);        
+        
     }       
     @org.junit.Test 
     public void test04_CalculoSalario_DBA() {
