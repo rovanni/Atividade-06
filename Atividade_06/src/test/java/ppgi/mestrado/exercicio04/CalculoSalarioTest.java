@@ -13,9 +13,12 @@ public class CalculoSalarioTest {
      */
     @org.junit.Test
     public void test01_CalculoSalario_DESENVOLVEDOR() {
+        //double porcentagem =0;
         Calculadora v = new Calculadora();
         Funcionario c = new Funcionario("José", "jose@jose.com", "DESENVOLVEDOR", 5000f);
         assertEquals(4000f,v.calculaSalarioLiquido(c),1.0);
+        //porcentagem = ((v.calculaSalarioLiquido(c)*100)/c.getSalarioBase());
+        assertEquals(20, (((v.calculaSalarioLiquido(c)*100)/c.getSalarioBase())-100),1.0);
         Funcionario c1 = new Funcionario("Antonio", "antonio@antonio.com", "DESENVOLVEDOR", 1000f); 
         assertEquals(900f,v.calculaSalarioLiquido(c1),1.0);        
     }   
