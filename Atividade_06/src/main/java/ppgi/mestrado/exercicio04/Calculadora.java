@@ -7,36 +7,37 @@ public class Calculadora {
    
     public double calculaSalarioLiquido(Funcionario s) {
         Double salarioLiquido = null;
-        if ("DESENVOLVEDOR".equals(s.getCargo())) {         
-            if (s.getSalarioBase() >= 3000){
-                salarioLiquido = desconto_20(s.getSalarioBase());
-            }
-            else {
-                salarioLiquido = desconto_10(s.getSalarioBase());
-            }
-        }else if ("DBA".equals(s.getCargo())) {
-            if (s.getSalarioBase() >= 2000){
-                salarioLiquido = desconto_25(s.getSalarioBase());
-            }
-            else {
-                salarioLiquido = desconto_15(s.getSalarioBase());
-            }            
-            
-        }else if ("TESTADOR".equals(s.getCargo())) { 
-            if (s.getSalarioBase() >= 2000){
-                salarioLiquido = desconto_25(s.getSalarioBase());
-            }
-            else {
-                salarioLiquido = desconto_15(s.getSalarioBase());
-            }            
-            
-        }else if ("GERENTE".equals(s.getCargo())) { 
-            if (s.getSalarioBase() >= 5000){
-                salarioLiquido = desconto_30(s.getSalarioBase());
-            }
-            else {
-                salarioLiquido = desconto_20(s.getSalarioBase());
-            }
+        if (null != s.getCargo()) switch (s.getCargo()) {
+            case "DESENVOLVEDOR":
+                if (s.getSalarioBase() >= 3000){
+                    salarioLiquido = desconto_20(s.getSalarioBase());
+                }
+                else {
+                    salarioLiquido = desconto_10(s.getSalarioBase());
+                }   break;
+            case "DBA":
+                if (s.getSalarioBase() >= 2000){
+                    salarioLiquido = desconto_25(s.getSalarioBase());
+                }
+                else {
+                    salarioLiquido = desconto_15(s.getSalarioBase());
+                }   break;
+            case "TESTADOR":
+                if (s.getSalarioBase() >= 2000){
+                    salarioLiquido = desconto_25(s.getSalarioBase());
+                }
+                else {
+                    salarioLiquido = desconto_15(s.getSalarioBase());
+                }   break;
+            case "GERENTE":
+                if (s.getSalarioBase() >= 5000){
+                    salarioLiquido = desconto_30(s.getSalarioBase());
+                }
+                else {
+                    salarioLiquido = desconto_20(s.getSalarioBase());
+                }   break;
+            default:
+                break;
         }
         return salarioLiquido;
     }    
