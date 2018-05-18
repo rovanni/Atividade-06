@@ -32,11 +32,16 @@ public class Atividade_06Test {
      * Test of main method, of class Atividade_06.
      */
     @Test
-    public void testMain() {
+    public void testCalculoSalarioDESENVOLVEDOR() {
+        calculadora v = new calculadora();
+        Funcionario c = new Funcionario("Luciano", "luciano@", "DESENVOLVEDOR", 5000f);
+        assertEquals(4000f,v.calcula_Sal_Liqui(c),1.0);
+    }   
+    public void testCalculoSalarioGERENTE() {
         calculadora v = new calculadora();
         Funcionario c = new Funcionario("Luciano", "luciano@", "GERENTE", 2500f);
-        assertEquals(2000,v.calcula_Sal_Liqui(c));
-    }        
+        assertEquals(2000f,v.calcula_Sal_Liqui(c),1.0);
+    }     
 
     
     
