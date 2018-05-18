@@ -23,13 +23,13 @@ public class Atividade_06Test {
     @Test    
     public void test03_CalculoSalario_TESTADOR() {
         calculadora v = new calculadora();
-        Funcionario c = new Funcionario("pedro", "pedro@pedro.com", "TESTADOR", 550f);
+        Funcionario c = new Funcionario("Pedro", "pedro@pedro.com", "TESTADOR", 550f);
         assertEquals(467.5f,v.calcula_Sal_Liqui(c),1.0);
     }       
     @Test    
     public void test04_CalculoSalario_DBA() {
         calculadora v = new calculadora();
-        Funcionario c = new Funcionario("maria", "maria@maria.com", "DBA", 2500f);
+        Funcionario c = new Funcionario("Maria", "maria@maria.com", "DBA", 2500f);
         assertEquals(1875f,v.calcula_Sal_Liqui(c),1.0);
     }   
     
