@@ -40,8 +40,8 @@ public class CalculoSalarioTest {
         Calculadora v = new Calculadora();
         Funcionario c = new Funcionario("Maria", "maria@maria.com", "DBA", 2500f);
         assertEquals(1875f,v.calculaSalarioLiquido(c),1.0);
-        Funcionario c1 = new Funcionario("Ana", "ana@ana.com", "DBA", 1500f);
-        assertEquals(1275f,v.calculaSalarioLiquido(c1),1.0);        
+        Funcionario c1 = new Funcionario("Ana", "ana@ana.com", "DBA", 1000f);
+        assertEquals(850f,v.calculaSalarioLiquido(c1),1.0);        
     }   
     
 }

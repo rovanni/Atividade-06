@@ -17,7 +17,7 @@ public class Principal {
         Colaborador[4] = new Funcionario("Pedro", "pedro@pedro.com", "TESTADOR", 550f);
         Colaborador[5] = new Funcionario("Daniel", "daniel@daniel.com", "TESTADOR", 550f);        
         Colaborador[6] = new Funcionario("Maria", "maria@maria.com", "DBA", 2500f); 
-        Colaborador[7] = new Funcionario("Ana", "ana@ana.com", "DBA", 1500f);        
+        Colaborador[7] = new Funcionario("Ana", "ana@ana.com", "DBA", 1000f);        
         Calculadora v = new Calculadora(); 
         System.out.println("|----------------------------------------------------------------------|");
         System.out.println("|----------------------- Calculando Salário ---------------------------|");        
