@@ -1,4 +1,4 @@
-package atividade_06;
+package com.mycompany.atividade_06;
 
 public class salario {
     int desconto;
