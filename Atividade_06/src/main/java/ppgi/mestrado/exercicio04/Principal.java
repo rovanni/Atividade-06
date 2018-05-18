@@ -18,10 +18,14 @@ public class Principal {
         Colaborador[5] = new Funcionario("Daniel", "daniel@daniel.com", "TESTADOR", 550f);        
         Colaborador[6] = new Funcionario("Maria", "maria@maria.com", "DBA", 2500f); 
         Colaborador[7] = new Funcionario("Ana", "ana@ana.com", "DBA", 1500f);        
-        Calculadora v = new Calculadora();        
+        Calculadora v = new Calculadora(); 
+        System.out.println("|----------------------------------------------------------------------|");
+        System.out.println("|----------------------- Calculando Salário ---------------------------|");        
+        System.out.println("|----------------------------------------------------------------------|");        
         for (Funcionario func1 : Colaborador) {
             System.out.println("O salario bruto é: R$"+ func1.getSalarioBase()+" e seu salário líquido do funcionário: " + func1.getNome() + " que é "+func1.getCargo()+" é de: R$ " + v.calculaSalarioLiquido(func1));            
         }
+        System.out.println("|----------------------------------------------------------------------|");         
     }
     
 }
